@@ -1,0 +1,179 @@
+/*swper插件*/
+@font-face {
+    font-family: 'iconfont';  /* project id 561407 */
+    src: url('https://at.alicdn.com/t/font_561407_f1uuijni0z281tt9.eot');
+    src: url('https://at.alicdn.com/t/font_561407_f1uuijni0z281tt9.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_561407_f1uuijni0z281tt9.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_561407_f1uuijni0z281tt9.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_561407_f1uuijni0z281tt9.svg#iconfont') format('svg');
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+body{
+
+}
+.swiper-container {width: 100vw;height: 30vh;}
+.swiper-slide{
+    background-color: #FF0036
+}
+.swiper-slide  img{
+    width: 100%;
+    height: 100%;
+}
+
+.type{
+    width: 100%;
+    height: 10vh;
+}
+.project,.down{
+    width: 50%;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    background: #A29E9C;
+    /*background: #3F3435;*/
+    float: left;
+}
+.project.active{
+    background-color: rgba(22, 154, 72, 0.52);
+    /*background-color: #00A5C4;*/
+}
+.down.active{
+    background-color: rgba(22, 154, 72, 0.52);
+    /*background-color: #00A5C4;*/
+}
+
+.content{
+    width: 100vw;
+    height: 50vh;
+    background-color: #fff;
+    /*实现自己滚动*/
+    /*overflow: auto;*/
+    overflow: hidden;
+
+}
+.content ul li{
+    width: 100vw;
+    height: 8vh;
+    color: #fff;
+    border-bottom: 1px solid #4F4F4F;
+    position: relative;
+
+}
+.itemlist li p{
+    width: 60vw;
+    height: 8vh;
+    padding-left: 2vw;
+   color: #4F4F4F;
+    float: left;
+    line-height: 6vh;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.itemlist li time{
+    width: 30vw;
+    height: 8vh;
+    /*background-color: #761c19;*/
+    float: left;
+    color: #4F4F4F;
+
+}
+.itemlist li span{
+    width:10vw;
+    height:8vh;
+    /*background-color: #FF0036;*/
+    float: left;
+    line-height: 6vh;
+    text-align: center;
+    font-family: 'iconfont';
+    color: yellow;
+    font-size: 14px;
+}
+.itemlist li .active{
+    color:red;
+}
+.itemlist li div{
+    width: 20vw;
+    height: 8vh;
+    background-color: #FFBC2E;
+    /*background-color: red;*/
+    color:#fff;
+    text-align: center;
+    line-height: 8vh;
+    position: absolute;
+    right: -20vw;
+    top:0;
+}
+.add{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(22, 154, 72);
+    /*background-color: red;*/
+    text-align: center;
+    line-height: 10vh;
+    font-size: 26px;
+    color:#fff;
+    font-weight: 700;
+    border-style: none;
+}
+.mask{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.67);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+    display: none;
+}
+.inputarea{
+    width: 100vw;
+    height: 62vh;
+    transform: translateY(-62vh);
+}
+#text{
+    width: 100vw;
+    height: 40vh;
+    border:none;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+
+}
+.submit,.update{
+    width: 100vw;
+    height: 10vh;
+    background-color: #ffbc2e;
+    /*background-color: red;*/
+    text-align: center;
+    line-height: 10vh;
+    font-size: 26px;
+    color:#fff;
+    font-weight: 700;
+    border-style: none;
+}
+.update{
+    display: none;
+}
+.cannel{
+    width: 6vh;
+    height: 6vh;
+    margin: 3vh auto;
+    text-align: center;
+    border: 1px solid #fff;
+    font-size: 16px;
+    line-height: 6vh;
+    border-radius: 50%;
+    color: #fff;
+}
